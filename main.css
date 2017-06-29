@@ -17,18 +17,21 @@ body{
     margin: 0;
     background-color: #eeebda;
 }
+
+
 h1, h2, h3{
     font-family: "Josefin Sans", sans-serif;
     margin-top: 0;
 }
 img{
     max-width: 100%;
-    padding: 0;
+    padding: 0;s
     margin: 0;
     display: block;
 }
 .wrapper{
     width: 1000px;
+
 
     /*
         TODO: 
@@ -38,22 +41,13 @@ img{
     */
 }
 #site-header{
-    /*
-        TODO
-        - Flexbox property here
-    */
+/*nothingto do here*/
 }
 #site-header div{
     text-align: center;
     padding: 60px 0 120px 0;
     font-size: 4em;
-
-    /*
-        TODO: 
-        - Add a background image "header-img.jpg"
-        make sure that the path to the image is correct
-    */
-
+    background-image: url(../ibeer_starter_files/img/header-img.jpg);
     background-size: cover;
     background-position: right bottom;
 }
@@ -67,20 +61,20 @@ img{
     top: 20px;
 }
 #site-header div h3{
+    font-family: Dancing Script;
     color: white;
     bottom: 20px;
     text-shadow: 0 5px 8px rgba( 0, 0, 0, 0.3 );
-    /*
-        TODO: 
-        - Use the script font: 'Dancing Script' fot this text
-    */
 }
 #main-navigation{
     background: #444;
+    display: flex;
+    justify-content: space-around;
 
     /*
         TODO: 
         - Use Flexbox to arrange the navigation links
+        *****Nav links look good****
     */
 }
 #main-navigation a{
@@ -93,6 +87,7 @@ img{
     /*
         TODO: 
         - Flexbox - Create general spacing between nav links
+        ****spacing looks good to me***
     */
 }
 #main-navigation #logo{
@@ -118,6 +113,7 @@ aside{
     padding: 20px;
     background-color: #eee;
     box-shadow: 5px 5px 8px rgba( 0, 0, 0, 0.3 );
+
     /*
         TODO: 
         - Flexbox: Set the starting width of this element
@@ -158,13 +154,19 @@ article time{
     color: #666;
 }
 article img{
+    float: right;
+    margin: 20px;
+
     /*
         TODO: 
         - Float article images to the right
         and match sizes and spacing to the mockup
     */
 }
+
 article footer p{
+    text-align: center;
+    border-bottom: 1px solid #ccc;
     /*
         TODO: 
         - Style the article footer
