@@ -31,25 +31,23 @@ img{
 }
 .wrapper{
     width: 1000px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: auto;
+    justify-content: center;
+
     margin: auto;
 }
 
-    /*
-        TODO: 
-        - Center up the page
-        - Create a flexbox containerer for
-        the major page sections
-    */
-}
 #site-header{
-/*nothingto do here*/
+    width: 1000px;
 }
 #site-header div{
     text-align: center;
     padding: 60px 0 120px 0;
     font-size: 4em;
     background-image: url(../ibeer_starter_files/img/header-img.jpg);
-    background-size: cover;
+    background-size: 100%;
     background-position: right bottom;
 }
 #site-header div h1,
@@ -104,6 +102,10 @@ main{
     padding: 20px;
     background-color: #444;
     box-shadow: -5px 5px 8px rgba( 0, 0, 0, 0.3 );
+    top:-60px;
+    position: relative;
+    width: 700px;
+
     /*
         TODO: 
         - Flexbox: Set the starting width of this element
@@ -114,6 +116,9 @@ aside{
     padding: 20px;
     background-color: #eee;
     box-shadow: 5px 5px 8px rgba( 0, 0, 0, 0.3 );
+    width: 200px;
+    position: relative;
+    top: -60px;
 
     /*
         TODO: 
@@ -131,6 +136,7 @@ aside img{
     border-radius: 50%;
     margin-bottom: 30px;
     border: 2px solid white;
+    flex-basis: auto;
 }
 article{
     background-color: white;
@@ -157,6 +163,7 @@ article time{
 article img{
     float: right;
     margin: 20px;
+    height: 200px;
 
     /*
         TODO: 
@@ -175,8 +182,13 @@ article footer p{
     */
 }
 #site-footer{
-    
     background: #333;
+    padding: 30px;
+    color: white;
+    text-align: center;
+
+    top:20px;
+    line-height: 40px;
     /*
         TODO: 
         - Style the site footer
